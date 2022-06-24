@@ -39,38 +39,53 @@
             </div>
         </nav>
     </div>
-    <div>
-        <h2>Hello welcome to Text-Manipulator.</h2>
+    <div class=" p-2 text-center ">
+        <h2><span class="fw-bold">Hello ,</span> welcome to Text-Manipulator.</h2>
     </div>
-    <div>
-        <form action=" " class="d-flex justify-center">
-            <label for="text " >
-                Enter text here:
-                <div>
-                    <textarea name="text" id="text" cols="50" rows="10" oninput="getWords()"></textarea>
+
+        <form action=" " class="container-fluid">
+            <label for="text" class="fs-3 text-start px-3"  >
+                Enter your text here :
+            </label>
+                <div class="d-flex justify-content-center p-2" style="font-size:19px !important;" >
+                    <textarea name="text" id="text" cols="100" rows="10" oninput="getWords()"></textarea>
                 </div>
                 
-            </label>
+            
         </form>
-    </div>
-    <div class="btns">
-        <button type="button" class="btn btn-outline-dark" onclick="upCase()">convert to upper case</button>
-        <button type="button" class="btn btn-outline-dark" onclick="loCase()">convert to lower case</button>
-        <button type="button" class="btn btn-outline-dark" onclick="copyText()">copy text</button>
-        <button type="button" class="btn btn-outline-dark" onclick="firstupCase()" > convert first letter to upper case</button>
-        <button type="button" class="btn btn-outline-dark" onclick="removeSpace()" >remove extra spaces. </button>
+
+    <div class="btns bg-light my-2 m-auto d-flex justify-content-around row container">
+        <div class=" col-6 col-sm-4 d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-outline-dark " onclick="upCase()">Convert to Uppercase</button>
+        </div>
+        <div class="col-6 col-sm-4 d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-outline-dark " onclick="loCase()">Convert to Lowercase</button>
+
+        </div>
+        <div class="col-6 col-sm-4 d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-outline-dark" onclick="copyText()">Copy Text</button>
+        </div>
+        <div class="col-6 col-sm-4 d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-outline-dark" onclick="firstupCase()" > Convert first letter to Uppercase</button>
+        </div>
+        <div class="col-6 col-sm-4 d-flex justify-content-center my-2">
+            <button type="button" class="btn btn-outline-dark " onclick="removeSpace()" >Remove extra spaces. </button>
+        </div>
     </div>
     <div class="txt-info">
-        <p>
-            Your text contain <span id="word">0</span> word and <span id="letter">0</span> letters .
+        <p class="px-2 fs-5">
+            Your text contain <span id="word" class="fw-bold">0</span> word and <span id="letter" class="fw-bold">0</span> letters .
         </p>
-        <p>
-            Averge reading time for your text is <span id="readTime">0</span> minutes.
+        <p class="px-2 fs-5">
+            Averge reading time for your text is <span id="readTime" class="fw-bold">0</span> minutes.
         </p>
     </div>
-    <footer>
-        <div class="bg-primary color-dark float-bottom">
-            <p> all rights reserved to Text-manipulator @ 2022-2023.</p>
+    <br>
+    <br>
+
+    <footer class="bg-primary color-dark fixed-bottom">
+        <div class="text-center">
+            <p> All rights reserved to Text-manipulator @ 2022-2023.</p>
         </div>
     </footer>
 
