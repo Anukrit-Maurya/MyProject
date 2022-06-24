@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Manipulator : Manipulate your text.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Text-Manipulator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <h2>Hello welcome to Text-Manipulator.</h2>
+    </div>
+    <div>
+        <form action=" " class="d-flex justify-center">
+            <label for="text " >
+                Enter text here:
+                <div>
+                    <textarea name="text" id="text" cols="50" rows="10" oninput="getWords()"></textarea>
+                </div>
+                
+            </label>
+        </form>
+    </div>
+    <div class="btns">
+        <button type="button" class="btn btn-outline-dark" onclick="upCase()">convert to upper case</button>
+        <button type="button" class="btn btn-outline-dark" onclick="loCase()">convert to lower case</button>
+        <button type="button" class="btn btn-outline-dark" onclick="copyText()">copy text</button>
+        <button type="button" class="btn btn-outline-dark" onclick="firstupCase()" > convert first letter to upper case</button>
+        <button type="button" class="btn btn-outline-dark" onclick="removeSpace()" >remove extra spaces. </button>
+    </div>
+    <div class="txt-info">
+        <p>
+            Your text contain <span id="word">0</span> word and <span id="letter">0</span> letters .
+        </p>
+        <p>
+            Averge reading time for your text is <span id="readTime">0</span> minutes.
+        </p>
+    </div>
+    <footer>
+        <div class="bg-primary color-dark float-bottom">
+            <p> all rights reserved to Text-manipulator @ 2022-2023.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
