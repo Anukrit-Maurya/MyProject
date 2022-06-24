@@ -30,6 +30,7 @@ function removeSpace(){
         }
     }
     getText().value=res;
+    getWords();
 }
 function getWords(){
     var txt=getText().value;
